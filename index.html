@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Dolce Delicia</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script language=javascript src="js/java.js"></script>
+</head>
+<body>
+  <header>
+    <div class="head">
+    <img src="media/Dolce Delicia.png" alt="Dolce Delicia">
+    <nav>
+      <ul class="main-nav">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li> <a href="#horario">Horario</a></li>
+        <li><a href="#pagos">Metodos de Pago</a></li>
+        <a href=misionvision.html> Mision y Vision</a>
+      </ul>
+    </nav>
+  </div>
+  </header>
+<br>
+  <section id="horario">
+    <h2>Horario</h2>
+    <p>Abrimos desde las 7:30am hasta las 3:20pm</p>
+  </section>
+  
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="producto">
+      <img src="media/crtaleman.jpg" alt="Crocante Aleman">
+      <h3>Crocante Aleman</h3>
+      <p>Delicioso arrollado de dulce de leche</p>
+      <p>Precio: $24.99</p>
+      <a href=crtaleman.html> Ingredientes</a>
+     <button onclick="agregarAlCarrito('Crocante Aleman', 24.99)">Agregar al Carrito</button>
+    </div>
+
+  <div class="producto">
+      <img src="media/crtchurchill.jpg" alt="Crocante Aleman de Churchill">
+      <h3>Crocante Aleman de Churchill</h3>
+      <p>Delicioso arrollado sabor Churchill</p>
+      <p>Precio: $24.99</p>
+      <a href=crtchurchill.html> Ingredientes</a>
+      <button onclick="agregarAlCarrito('Crocante Aleman de Churchill', 24.99)">Agregar al Carrito</button>
+    </div>
+
+  <div class="producto">
+        <img src="media/crtredvelvet.jpg" alt="Crocante Aleman de Red Velvet">
+        <h3>Crocante Aleman de Red Velvet</h3>
+        <p>Delicioso arrollado sabor Red Velvet</p>
+        <p>Precio: $24.99</p>
+        <a href=crtredvelvet.html> Ingredientes</a>
+        <button onclick="agregarAlCarrito('Crocante Aleman de Red Velvet', 24.99)">Agregar al Carrito</button>
+      </div>
+
+   <div class="producto">
+        <img src="media/brownie.jpg" alt="Brownie">
+        <h3>Brownie</h3>
+        <p>Delicioso Brownie de Chocolate </p>
+        <p>Precio: $11.50</p>
+        <a href=brownie.html> Ingredientes</a>
+        <button onclick="agregarAlCarrito('Brownie', 11.50)">Agregar al Carrito</button>
+      </div>
+    
+  </section>
+   <div class="contacto">
+    <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Numero telefonico +(506)8911-7854</p>
+   </div>
+  </section>
+  
+  <div class="pagos">
+  <section id="pagos">
+    <h2>Metodos de Pago</h2>
+    <p>Aceptamos los siguientes metodos de pago:</p>
+    <ul>
+      <p>Tarjeta de Credito</p>
+      <p>Sinpe Movil</p>
+    </ul>
+  </section>
+  
+  </div>
+   <section id="carrito">
+   <div class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito">
+      
+    </ul>
+    <p>Total: <span id="total">0.00</span></p>
+    <button onclick="realizarPago()">Realizar Pago</button></button>
+   </div>   
+  </section>
+  
+</body>
+</html>

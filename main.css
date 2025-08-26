@@ -1,0 +1,202 @@
+/* Estilos base (Mobile First) */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #edeae7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    text-align: center;
+    border: 5px solid #00a3ff;
+    padding: 20px;
+}
+header img {
+    max-width: 150px; /* Tamaño inicial del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centra el logo y añade margen inferior */
+}
+h1, h2, h3 {
+    color: #Fd80ff;
+    text-align: center;
+}
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apilado en móviles */
+    align-items: center; /* Centra los ítems */
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e67e22; /* Un color naranja para los enlaces */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #d35400;
+}
+/* Secciones generales */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 90%; /* Limita el ancho para mejor legibilidad */
+}
+/* Productos */
+.producto {
+    border: 5px solid #00a3ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%; /* Imágenes responsivas */
+    height: auto;
+}
+.producto button {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.producto button:hover {
+    background-color: #218838;
+}
+/* Tablas de ingredientes */
+.table-responsive {
+    overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es muy ancha */
+    margin: 20px auto;
+    max-width: 90%;
+}
+table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: collapse;
+    min-width: 300px; /* Asegura un ancho mínimo para la tabla */
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* Enlace "Volver a página principal" */
+a[href="index.html"] {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+a[href="index.html"]:hover {
+    background-color: #0056b3;
+}
+/* Carrito de compras */
+.carrito {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 90%;
+}
+#lista-carrito li {
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+#lista-carrito li:last-child {
+    border-bottom: none;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+}
+.carrito button {
+    background-color: #6c757d; /* Color gris para el botón de pago */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.carrito button:hover {
+    background-color: #5a6268;
+}
+
+/* Para tabletas y pantallas medianas (ej. 768px y más) */
+@media (min-width: 768px) {
+    header img {
+        max-width: 200px; /* Logo un poco más grande */
+        margin: 0; /* Alinea a la izquierda en pantallas más grandes */
+    }
+    nav ul {
+        flex-direction: row; /* Elementos de navegación en fila */
+        justify-content: flex-end; /* Alinea a la derecha */
+        width: auto; /* Ajusta el ancho */
+    }
+    nav ul li {
+        margin: 0 15px; /* Espacio entre elementos de navegación */
+    }
+    section {
+        max-width: 800px; /* Aumenta el ancho máximo de las secciones */
+        padding: 30px;
+    }
+    .producto {
+        display: flex;
+        flex-direction: column; /* Asegura que los productos se apilen verticalmente */
+    }
+  } 
+
+.table-responsive {
+        max-width: 800px;
+    }
+    
+/* Para escritorios y pantallas grandes (ej. 1024px y más) */
+@media (min-width: 1024px) {
+    header img {
+        max-width: 250px; /* Logo más grande */
+    }
+    section {
+        max-width: 1000px; /* Aumenta el ancho máximo de las secciones */
+    }
+    .producto {
+        display: flex;
+        flex-direction: column; /* Asegura que los productos se apilen verticalmente */
+    }
+    .table-responsive {
+        max-width: 900px;
+    }
+}
